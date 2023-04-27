@@ -665,7 +665,7 @@ fieldset{
 
 }
 /* Tablet display posicion vertical */
-@media screen and (max-width: 800px) and (orientation: portrait){
+@media only screen and (max-width: 800px) and (orientation: portrait){
     
     .checkbtn {
         font-size: 30px;
@@ -754,7 +754,7 @@ fieldset{
 
 }
 /* Móvil display posicion horizontal */
-@media screen and (max-width: 800px) and (orientation:landscape){
+@media only screen and (max-width: 800px) and (orientation:landscape){
 
     #titular{
         font-size: small; 
@@ -780,8 +780,8 @@ fieldset{
         
     }
 }
-/* Móvil display posicion horizontal */
-@media screen and (max-width: 414px) and (orientation:portrait){
+/* Móvil display posicion vertical */
+@media only screen and (max-width: 414px) and (orientation:portrait){
     #comentario{
       
         margin-top: 4vh;
@@ -822,6 +822,10 @@ fieldset{
     }
     .persona{
         width: 50vw;
+    }
+
+    .fotoPersona{
+        width: 100%;
     }
     
     .gruposContacto{
