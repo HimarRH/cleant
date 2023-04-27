@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/mainStyle.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+            <nav>
+                <div>
+                    <a href="index.html" >
+                        <img src="img/logo_blanco.png" alt="imagen logo" id="logo">
+                    </a>
+                </div>
+                <div id="menu"> 
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn"> <i class="fa-solid fa-bars"></i> </label>
+                    <ul>
+                        <li><a href="quienes.html" ><li>Quienes Somos</a>
+                                <ul>
+                                    <li><a href="#" ><li>Filosofía de empresa</li></a></li>
+                                    <li><a href="#" ><li>Nuestros servicios</li></a></li>
+                                    <li><a href="contacto.html" ><li>Contacto</li></a></li>
+                                </ul>
+                            </li>
+                        </li>
+                        <li><a href="#" ><li>Noticias</li></a></li>
+                        <li><a href="areas.html" ><li>Áreas de actuación</li></a></li>
+                        <li><a href="#" ><li>Publicaciones</li></a></li>
+                        <li><a href="#" ><li>Localización</li></a></li>
+                        <li><a class="active" href="contacto.html" ><li>Contacto</li></a></li>  
+                    </ul>
+                </div>   
+            </nav>
+            <header>
+                <div class="fondoContacto">
+                    <div class="cabecero">
+                       <div id="titular">
+                            <h1>Contacta con nosotros</h1> 
+                       </div> 
+                       <div id="comentario">
+                            <p class="textoComentario">Estaremos encantados de ponernos en contacto contigo</p>
+                       </div>
+                       </div>
+                   </div>
+            </header> 
+            <main>
+                <section>
+                    <div class="principal">
+                        <article>
+                            <div class="cuerpo">
+                                <h2>Lorem fistrum ese pedazo de se calle ustée sexuar</h2>
+                                <div ><img src="img/linea.png" class="separador"></div>
+                                <div class="presentacion">
+                                    <p>Aquí le dejamos un formulario para que se ponga en contacto con nosotros. Por favor rellene todos los campos para tener la mayor información sobre usted y su empresa.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                        <form action="procesarPeticion.jsp" method="get">
+                            <fieldset>  
+                                    <div class="especioFormulario">
+                                        <div class="gruposContacto">
+                                            <div class="camposFormularioContacto">
+                                                <label for="nombre">Nombre:</label>
+                                                <input type="text" name="nombre" id="nombre" placeholder="Introduce tu nombre" autofocus required/>
+                                            </div>
+                                            <div class="camposFormularioContacto">
+                                                <label for="apellidos">Apellidos:</label>
+                                                <input type="text" name="apellidos" id="Apellidos" placeholder="Introduce tu apellido" required/> 
+                                            </div>
+                                        </div>
+                                        <div class="gruposContacto">
+                                            <div class="camposFormularioContacto">
+                                                <label for="email">Email:</label>
+                                                <input type="email" name="email" id="email" placeholder="Introduce tu email" required/>
+                                            </div> 
+                                            <div class="camposFormularioContacto">
+                                                <label for="genero">Selecciona tu genero</label>
+                                                <select name="genero" id="genero">
+                                                    <option value="Mujer">Mujer</option>
+                                                    <option value="Hombre">Hombre</option>
+                                                    <option value="NoDeterminado">No determinar</option>
+                                                </select>
+                                            </div> 
+                                        </div>
+                                        <div class="camposFormularioContacto" >
+                                            <label for="fecha_nacimiento">Introduce tu fecha de nacimiento</label>
+                                            <input type="date" name="fecha_nacimiento" id="fecha_nacimiento" required>
+                                        </div>
+                                        <div class="gruposContacto">
+                                            <div class="camposFormularioContacto">
+                                                <label for="nombreEmpresa"> Nombre Empresa:</label>
+                                                <input type="text" name="nombreEmpresa" id="nombreEmpresa" required>
+                                            </div>
+                                            <div class="camposFormularioContacto">
+                                                <label for="numeroEmpleados">Número de empleados:</label>
+                                                <input type="number" min="1" max="250" step="1" name="numeroEmpleados" id="numeroEmpleados" value="1">
+                                            </div> 
+                                        </div>
+                                        <div class="gruposContacto">
+                                            <div class="camposFormularioContacto">
+                                                <label for="telefono">Teléfono:</label>
+                                                <input type="tel" name="telefono" id="telefono"/>
+                                            </div>
+                                            <div class="camposFormularioContacto">
+                                                <label for="webEmpresa">Web de la Empresa</label>
+                                                <input type="url" name="webEmpresa" id="webEmpresa"/>
+                                            </div>
+                                        </div>
+                                        <div class="camposFormularioContacto">
+                                            <label for="sectorEmpresa">A que sector pertenece su empresa : </label>
+                                        </div>
+                                        <div class="gruposContacto">
+                                            <div class="camposFormularioContacto">
+                                                <input type="radio" name="sectorEmpresa" id="sectorEmpresa" value="MC">Marketing y Comunicaciones</br> 
+                                            </div>
+                                            <div class="camposFormularioContacto">
+                                                <input type="radio" name="sectorEmpresa" id="sectorEmpresa" value="EP">Empresa Pública</br>
+                                            </div>
+                                            <div class="camposFormularioContacto">
+                                                <input type="radio" name="sectorEmpresa" id="sectorEmpresa" value="HR">Sector Horeca</br>
+                                            </div>
+                                        </div>
+                                        <div class="gruposContacto">
+                                            <div class="camposFormularioContacto">
+                                                <input type="radio" name="sectorEmpresa" id="sectorEmpresa" value="MC">Constructora o Inmobiliaria</br> 
+                                            </div>
+                                            <div class="camposFormularioContacto">
+                                                <input type="radio" name="sectorEmpresa" id="sectorEmpresa" value="VO">Venta Online</br>
+                                            </div>
+                                            <div class="camposFormularioContacto">
+                                                <input type="radio" name="sectorEmpresa" id="sectorEmpresa" value="SN">Sanitario</br>
+                                            </div>
+                                        </div>
+                                        <div class="camposFormularioContacto">
+                                            <label for="intereses">¿Qué le interesa de nuestra empresa?</label>
+                                        </div>
+                                        <div class="gruposContacto">
+                                            <div class="camposFormularioContacto">
+                                                <input type="checkbox" name="intereses" id="intereses" value="MI">Microservicios</br> 
+                                            </div>
+                                            <div class="camposFormularioContacto">
+                                                <input type="checkbox" name="intereses" id="intereses" value="DE">Desarrollo Web</br>
+                                            </div>
+                                            <div class="camposFormularioContacto">
+                                                <input type="checkbox" name="intereses" id="intereses" value="SE">Auditoría SEO</br>
+                                            </div>
+                                            <div class="camposFormularioContacto">
+                                                <input type="checkbox" name="intereses" id="intereses" value="AP">Aplicación Móvil</br>
+                                            </div>
+                                        </div>
+                                        <div class="cajaTextoContacto">
+                                            <label for="observaciones">Deje aquí sus comentarios :</label>
+                                        </div>
+                                        <div class="camposFormularioContacto"></div>
+                                            <textarea style="resize: none" ; rows="6" cols="80" name="observaciones" id="observaciones"></textarea>
+                                        </div>
+                                        <div class="camposFormularioContacto">
+                                            <label for="terminos">¿Acepta los términos y condiciones de uso</label>
+                                        </div>
+                                        <div class="camposFormularioContacto">
+                                            Acepto <input type="checkbox" name="terminos" id="terminos" required/>
+                                        </div>
+                                        <div class="camposFormularioContacto">
+                                            <input type="submit" value="Enviar"/>
+                                        </div>
+                                    </div>   
+                                </fieldset>
+                        </form>
+                    </div>
+                </section>
+            </main>
+            <aside>
+                <div class="espacio">
+                    <div class="textpubli">Publicidad</div>
+                    <div class="publicidad">
+                        <img lass="imaPubli" src="img/publicidad.png">
+                    </div>
+                </div>
+            </aside>
+            <footer>
+                <div class="pie">
+                        <div><a href="index.html"><img src="img/logo_blanco.png" id="logopie"></a></div>
+                    <div class="mapa">
+                        <h3>Sobre nosotros</h3>
+                        <a href="quienes.html">Quienes somos</a>
+                        <a href="#">Nuestros servicios</a>
+                        <a href="#">Política de Privacidad</a>
+                        <a href="#">Trabaja con nosotros</a>
+                    </div>
+                    <div class="redes">
+                        <a href="https://facebook.com/" target="_blank"><label class="red"><i class="fa-brands fa-facebook" class="red"></i></label></a>
+                        <a href="https://www.instagram.com/" target="_blank"><label class="red"><i class="fa-brands fa-instagram"></i></label></a>
+                        <a href="https://www.tiktok.com" target="_blank"><label class="red"><i class="fa-brands fa-tiktok"></i></label></a>
+                    </div>
+                </div>
+            </footer>
+    </div> 
+</body>
+</html>

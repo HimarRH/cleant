@@ -1,0 +1,879 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+#check{
+    display: none;
+}
+
+.checkbtn{
+    display: none;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #49c5b6;
+    padding:2vh;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+
+}
+
+#logo{
+    height: auto;
+    width: 60%;
+}
+
+#menu {
+    width: 70%;
+    
+
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 5vw;
+
+}
+
+
+li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+li a:hover, li a.active{
+
+    background: #ECD06F;
+    transition: 0.5s;
+    color: white ;
+    padding: 5px;
+
+}
+nav li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+}
+
+nav li:hover > ul {
+    display:flex;
+    flex-direction: column;
+    background-color: #ECD06F;
+    justify-content: left;
+    transition: all 0,25s;
+    padding-top: 2vh;
+    width: 15vw;
+    height: 27vh;
+}
+
+nav li ul li {
+    display: flex;
+    padding-top: 2vh;
+    padding-left: 1vw;
+    position:relative;
+}
+
+section{
+    display:inline-flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100%;
+    background-color: #fff;
+}
+
+
+.fondo{
+    background: url(../img/cover.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    width: 100vw;
+    display:flex;
+    justify-content: center;
+}
+.fondoQuienes{
+    background: url(../img/coverQuienes.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    width: 100vw;
+    display:flex;
+    justify-content: center;
+}
+.fondoContacto{
+    background: url(../img/coverContacto.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    width: 100vw;
+    display:flex;
+    justify-content: center;
+    
+}
+.fondoAreas{
+    background: url(../img/coverAreas.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    width: 100vw;
+    display:flex;
+    justify-content: center;
+}
+
+
+
+.cabecero{
+    display: inline-flex;
+    flex-direction: column;
+    color: #dfdce3;
+    justify-content:center;
+    align-items: center;
+}
+
+#titular{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large; 
+    text-align: center;
+    width: 80vw;
+    height: 8vh;
+    text-transform: uppercase;
+}
+#comentario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    text-align: center;
+    margin-top: 15px;
+}
+.textoComentario{
+    color: #dfdce3;
+}
+
+.principal{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3vh;
+}
+.cuerpo{
+    display:inline-flex;
+    height: 25vh;
+    width: 80vw;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5vh; 
+    text-align: center;
+    margin-bottom: 1vh;
+}
+
+
+h2 {
+    color: #49c5b6;
+    text-transform: uppercase;
+}
+
+.separador {   
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+}
+.presentacion{
+    display: flex;
+    width: 60vw;
+    text-align: center;
+    color: #5f5f5f;
+}
+.contenedor {
+    display:inline-flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 7vh;
+    
+}
+.contenedor2 {
+    display:inline-flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    margin: 7vh;  
+}
+
+.portada{
+    display:flex;
+    width: 40vw;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;   
+}
+.imgPortada{
+    width: 25vw;
+}
+.desarollo{ 
+    display: flex;
+    width: 40vw;
+    text-align:right;
+    padding-top: 4vh;
+    padding-right: 2vw;
+    flex-direction:column;
+}
+.desarollo p{
+    color: #5f5f5f;
+    margin-top: 2vh;
+}
+
+.desarollo2{
+    display: flex;
+    width: 40vw;
+    text-align:left;
+    padding-top: 4vh;
+    padding-left: 2vw;
+    flex-direction:column;
+}
+
+.desarollo2 p{
+    color:#5f5f5f;
+    margin-top: 2vh;
+}
+
+.contacto{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+    height: 20vh;
+    background-color: #ECD06F;
+    margin-top:30px;
+    margin-bottom: 30px;
+}
+.espaciocont{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 80vw;
+    height: 20vh;
+}
+.texto{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 30vw;
+    text-align: left;
+    margin-right: 10px;
+}
+.texto h3{
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.texto p{
+    color: #fff;
+}
+
+.contbtn{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 20vw;
+    margin:3px;  
+}
+#botonContacto{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 12vw;
+    height: 5vh;
+    background-color: #49c5b6;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+}
+#botonContacto a{
+    text-decoration: none;
+    color: #fff;
+}
+#botonContacto:hover{
+    background-color: #fc4a1a;
+}
+
+/* Aside CSS */
+aside{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+}
+.espacio{ 
+    margin-top:30px;
+    margin-bottom: 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    width: 80vw;
+    flex-direction: column;
+}
+.textpubli{
+    display: flex;
+    color: #dfdce3;
+}
+.publicidad{
+    display:flex;
+    margin-top:5px;
+    margin-bottom: 5px;
+}
+
+.imaPubli{
+    width:80vw;
+}
+
+/* Footer CSS */
+footer{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: row;
+    width:100vw;
+    background-color: #49c5b6;
+    margin-top:15px;
+    padding-bottom: 15px;
+}
+.pie{
+    display:flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 80vw;
+}
+
+#logopie{
+    height: auto;
+    width: 70%;
+    float: left;
+    margin: 20px;
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size:30px;
+    width:10vw;
+    margin:20px
+}
+
+.red {
+    color: #fff;
+    cursor: pointer;
+}
+.red:hover{
+    color:#f4613f;
+}
+.mapa{
+    display: flex; 
+    flex-direction: column;
+    width: 15vw;
+    margin-top: 20px;
+    margin-left:30px;
+}
+.mapa h3{
+    color: #fff;
+}
+.mapa a{
+    text-decoration: none;
+    color: #fff;
+    margin-top: 10px;
+}
+
+/* PÁGINA DE CONTACTO */
+fieldset{
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    align-items: center;
+    border:none;
+}
+
+.espacioFormulario{
+    display: inline-flex;
+    flex-direction: column;
+}
+.gruposContacto{
+    display: flex;
+    flex-direction: row;
+}
+
+.camposFormularioContacto{
+    display: flex;
+    margin:10px;
+}
+.cajaTextoContacto{
+    display: flex;
+    margin:10px;
+}
+
+/* PÁGINA DE QUIENES SOMOS */
+.contTarjetas{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 80vw;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.tarjetas{
+    display: flex;
+    flex-direction: column;
+    width: 15vw;
+    height: 400px;
+    justify-content: start;
+    background-color: #fff;
+}
+.persona{
+    display: flex;
+    width: 15vw;
+    justify-content: top;
+    align-items: top;
+}
+.fotoPersona{
+    width: 15vw;
+}
+.descripcion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 15px;
+}
+.descripcion h4{
+    color:#ECD06F;
+    margin-bottom: 10px;
+    font-size: large;
+}
+.descripcion p{
+    padding: 15px;
+    margin-bottom: 10px;
+    color: #5f5f5f;
+}
+
+.tarjetas:hover {
+    box-shadow: 3px 6px 9px grey;
+    cursor: pointer;
+    background-color: #fafafa;
+    transition: box-shadow 0.2s ease-in;
+    transform: scale(1.03);
+    transition: transform 0.3s ease-in;
+}
+/* PÁGINA DE AREAS DE ACTUACIÓN*/
+.contenedorServicio{
+    display: flex;
+    width: 80vw ;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    border: #5f5f5f;
+    border-style: groove;
+    border-width: 1px;
+}
+.contenedorServicio:hover {
+    box-shadow: 3px 6px 9px grey;
+    cursor: pointer;
+    background-color: #fafafa;
+    transition: box-shadow 0.2s ease-in;
+    transform: scale(1.03);
+    transition: transform 0.3s ease-in;
+  
+}
+.servicio{
+    display: flex;
+    justify-content: left;
+    align-items: start;
+    width: 20vw;
+    margin-right: 5vw;
+    padding-left: 2vw;
+    padding-top: 2vh;
+}
+.descServicio{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    width:30vw;
+    margin-right: 5vw;
+    padding-top: 2vh;
+}
+.areaServicio{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 4vh;
+}
+.areaServicio h3{
+    color: #dfdce3;
+    font-size: large;
+    font-style: normal;
+}
+
+.servitext h4{
+    color: #ECD06F;
+    margin-bottom: 2vh;
+}
+.servitext p{
+    color:#5f5f5f;
+}
+.servbtn{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 20vw;
+    margin-top: 2vh;
+    padding-bottom: 2vh;
+}
+#botonServicio{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 12vw;
+    height: 5vh;
+    background-color: #49c5b6;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+}
+#botonServicio a{
+    text-decoration: none;
+    color: #fff;
+}
+#botonServicio:hover{
+    background-color: #fc4a1a;
+}
+
+.imgServicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+}
+.servsize{
+    width: 20vw;
+}
+
+/* Tablet display posicion horizontal */
+@media only screen and (max-width: 1080px) and (orientation:landscape){
+
+    .checkbtn {
+        font-size: 30px;
+        color:#fff;
+        float: right;
+        justify-content: center;
+        align-items: center;
+        line-height: 90px;
+        margin-right: 8vw;
+        cursor: pointer;
+        display: block;
+    }
+    #menu{
+        z-index: 2;
+    }
+
+    ul{
+        position: fixed;
+        display:flex;
+        align-items: center;
+        width: 100%;
+        height:100vh;
+        background:#49c5b6;
+        flex-direction:column;
+        justify-content:start;
+        top: 100px;
+        left: -100%; 
+        transition: all .5s;
+        z-index: 1;
+    }
+
+    li {
+        display: block;
+        padding-top: 2vh;
+        font-size: 20px;
+    }
+
+    li a:hover, li a.active{
+        background: none;
+        color:#ECD06F;
+    }
+
+    #check:checked ~ ul{
+        left:0;
+        transition: all .25s;
+    }
+
+    .contenedor{
+        flex-direction: column;
+    }
+    .desarollo{
+        text-align: center;
+    }
+    .contenedor2{
+        flex-direction: column;
+    }
+    .desarollo2{
+        text-align: center;
+    }
+    .espaciocont{
+       
+        flex-direction: row;
+       
+    }
+    .texto {
+        text-align: center;
+    }
+    .boton {
+        width: auto;
+    }
+
+    .contTarjetas {
+        width: 60vw;
+        flex-wrap: wrap;
+    }
+
+    .tarjetas{
+        width: 25vw;
+        height: auto;
+    }
+    .persona{
+        width: 25vw;
+    }
+    .fotoPersona{
+        width:100%;
+    }
+
+}
+/* Tablet display posicion vertical */
+@media screen and (max-width: 800px) and (orientation: portrait){
+    
+    .checkbtn {
+        font-size: 30px;
+        color:#fff;
+        float: right;
+        justify-content: center;
+        align-items: center;
+        line-height: 90px;
+        margin-right: 8vw;
+        cursor: pointer;
+        display: block;
+    }
+
+    #menu{
+        z-index: 2;
+    }
+
+    ul{
+        position: fixed;
+        display:flex;
+        align-items: center;
+        width: 100%;
+        height:100vh;
+        background:#49c5b6;
+        flex-direction:column;
+        justify-content:start;
+        top: 100px;
+        left: -100%; 
+        transition: all .5s;
+        z-index: 1;
+    }
+
+    li {
+        display: block;
+        padding-top: 2vh;
+        font-size: 20px;
+    }
+
+    li a:hover, li a.active{
+        background: none;
+        color:#ECD06F ;
+    }
+
+    #check:checked ~ ul{
+        left:0;
+        transition: all .25s;
+    }
+    
+    #titular{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #comentario{
+        text-align: center;
+    }
+    .fondo{
+       
+        height: calc(60vh);
+    }
+    .pie{
+        align-items: center;
+        flex-direction: column;
+        width: 30vw;
+    }
+    #logopie{
+        height: auto;
+
+    }
+
+    .redes {
+        flex-direction: row;
+        justify-content: space-around;
+        font-size:30px;
+        width:30vw;
+        margin-top:20px;
+        margin-bottom: 20px;
+    }
+    
+    .mapa{
+        flex-direction: column;
+        width:30vw;
+        margin-top: 10px;
+    }
+
+
+}
+/* Móvil display posicion horizontal */
+@media screen and (max-width: 800px) and (orientation:landscape){
+
+    #titular{
+        font-size: small; 
+        width: 60vw;
+        text-transform: uppercase;
+    }
+    #comentario{
+        width: 60vw;
+        font-size: medium;
+        margin-top: 8vh;
+    }
+    .cuerpo{
+        margin-bottom: 25vh;
+    }
+
+    .texto p{
+        display:none;
+    }
+
+    #botonContacto{
+        width: 20vw;
+        height: 7vh;
+        
+    }
+}
+/* Móvil display posicion horizontal */
+@media screen and (max-width: 414px) and (orientation:portrait){
+    #comentario{
+      
+        margin-top: 4vh;
+    }
+    .cuerpo{
+        margin-bottom: 15vh;
+    }
+    .imgPortada{
+        width: 40vw;
+    }
+    .espaciocont{
+        align-items: center;
+        flex-direction: column;
+    }
+    .texto{
+        width: 80vw;
+        text-align: center;
+    }
+    .contbtn{ 
+        align-items: center;
+        width: 60vw;
+    }
+    #botonContacto{
+        width: 60vw;
+    }
+    .espacio{
+        display: none;
+    }
+
+    .contTarjetas{
+        align-items: center;
+        justify-content: center;
+    } 
+    .tarjetas{
+        width: 50vw;
+        height: auto;
+        margin-bottom: 5vh;
+    }
+    .persona{
+        width: 50vw;
+    }
+    
+    .gruposContacto{
+        margin-left: 20vw;
+        width: 80vw;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .camposFormularioContacto{
+        margin:10px;
+        justify-content: left;
+        align-items: center;
+        flex-direction: column;
+    }
+    .cajaTextoContacto{
+        align-items: center;
+        justify-content: center;
+    }
+    .contenedorServicio{
+        align-items: center;
+        flex-direction: column;
+    }
+    .servicio{
+        
+        justify-content: left;
+        padding-right: 5vw;
+        width: 50vw;
+    }
+    .descServicio{
+        width:50vw;
+        margin-right: 5vw;
+        padding-top: 2vh;
+    }
+   
+    .servbtn{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 20vw;
+        margin-top: 2vh;
+        padding-bottom: 2vh;
+    }
+    #botonServicio{
+        
+        width: 20vw;
+    
+    }
+
+    .imgServicio{
+        display: none;
+    }
+
+    
+
+}
