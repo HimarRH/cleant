@@ -1135,6 +1135,31 @@ fieldset{
     .imgServicio{
         display: none;
     }
+    .pie{
+        align-items: center;
+        flex-direction: column;
+        width: 30vw;
+    }
+    #logopie{
+        height: auto;
+
+    }
+    .redes {
+        flex-direction: row;
+        justify-content: space-around;
+        font-size:30px;
+        width:30vw;
+        margin-top:20px;
+        margin-bottom: 20px;
+    }
+    
+    .mapa{
+        flex-direction: column;
+        width:30vw;
+        margin-top: 10px;
+    }
+
+    
 
     
 
