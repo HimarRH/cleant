@@ -444,7 +444,16 @@ fieldset{
     height: 400px;
     justify-content: start;
     background-color: #fff;
+    transition: all 400ms ease;
 }
+
+.tarjetas:hover {
+    box-shadow: 3px 6px 9px grey;
+    cursor: pointer;
+    background-color: #fafafa;
+    transform: scale(1.03);
+}
+
 .persona{
     display: flex;
     width: 15vw;
@@ -473,14 +482,6 @@ fieldset{
     color: #5f5f5f;
 }
 
-.tarjetas:hover {
-    box-shadow: 3px 6px 9px grey;
-    cursor: pointer;
-    background-color: #fafafa;
-    transition: box-shadow 0.2s ease-in;
-    transform: scale(1.03);
-    transition: transform 0.3s ease-in;
-}
 /* PÁGINA DE AREAS DE ACTUACIÓN*/
 .contenedorServicio{
     display: flex;
@@ -492,14 +493,13 @@ fieldset{
     border: #5f5f5f;
     border-style: groove;
     border-width: 1px;
+    transition: all 400ms ease;
 }
 .contenedorServicio:hover {
     box-shadow: 3px 6px 9px grey;
     cursor: pointer;
     background-color: #fafafa;
-    transition: box-shadow 0.2s ease-in;
     transform: scale(1.03);
-    transition: transform 0.3s ease-in;
   
 }
 .servicio{
