@@ -624,13 +624,13 @@ fieldset{
     }
 
     .contenedor{
-        flex-direction: column;
+        flex-direction: row;
     }
     .desarollo{
         text-align: center;
     }
     .contenedor2{
-        flex-direction: column;
+        flex-direction: row-reverse;
     }
     .desarollo2{
         text-align: center;
@@ -643,9 +643,12 @@ fieldset{
     .texto {
         text-align: center;
     }
-    .boton {
-        width: auto;
+    #botonContacto{
+        width: 20vw;
+        height: 7vh;
+        
     }
+   
 
     .contTarjetas {
         width: 60vw;
@@ -655,6 +658,7 @@ fieldset{
     .tarjetas{
         width: 25vw;
         height: auto;
+        margin-bottom: 4vh;
     }
     .persona{
         width: 25vw;
@@ -722,8 +726,70 @@ fieldset{
     #comentario{
         text-align: center;
     }
+
+    .contenedor{
+        flex-direction: column;
+        margin: 2vh;
+    }
+    .desarollo{
+        text-align: center;
+    }
+    .contenedor2{
+        flex-direction: column;
+        margin: 2vh;
+    }
+    .desarollo2{
+        text-align: center;
+    }
+    .espaciocont{
+       
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    .texto {
+        width: 80vw;
+        margin-bottom: 2vh;
+        text-align: center;
+    }
+    .texto p{
+        display: none;
+    }
+    #botonContacto{
+        width: 20vw;
+        height: 5vh;
+        
+    }
+    .contTarjetas {
+        width: 60vw;
+        flex-wrap: wrap;
+    }
+
+    .tarjetas{
+        width: 25vw;
+        height: auto;
+        margin-bottom: 4vh;
+    }
+    .persona{
+        width: 25vw;
+    }
+    .fotoPersona{
+        width:100%;
+    }
+
     .fondo{
        
+        height: calc(60vh);
+    }
+    .fondoQuienes{
+
+        height: calc(60vh);
+
+    }
+    .fondoContacto{
+        height: calc(60vh);
+    }
+    .fondoAreas{
         height: calc(60vh);
     }
     .pie{
@@ -735,7 +801,6 @@ fieldset{
         height: auto;
 
     }
-
     .redes {
         flex-direction: row;
         justify-content: space-around;
@@ -755,9 +820,56 @@ fieldset{
 }
 /* Móvil display posicion horizontal */
 @media only screen and (max-width: 800px) and (orientation:landscape){
+     .checkbtn {
+        font-size: 30px;
+        color:#fff;
+        float: right;
+        justify-content: center;
+        align-items: center;
+        line-height: 90px;
+        margin-right: 8vw;
+        cursor: pointer;
+        display: block;
+    }
 
+    #menu{
+        z-index: 2;
+    }
+
+    ul{
+        position: fixed;
+        display:flex;
+        align-items: center;
+        width: 100%;
+        height:100vh;
+        background:#49c5b6;
+        flex-direction:column;
+        justify-content:start;
+        top: 100px;
+        left: -100%; 
+        transition: all .5s;
+        z-index: 1;
+    }
+
+    li {
+        display: block;
+        padding-top: 2vh;
+        font-size: 20px;
+    }
+
+    li a:hover, li a.active{
+        background: none;
+        color:#ECD06F ;
+    }
+
+    #check:checked ~ ul{
+        left:0;
+        transition: all .25s;
+    }
+   
     #titular{
         font-size: small; 
+        text-align: center;
         width: 60vw;
         text-transform: uppercase;
     }
@@ -765,11 +877,37 @@ fieldset{
         width: 60vw;
         font-size: medium;
         margin-top: 8vh;
+        text-align: center
     }
+    
     .cuerpo{
         margin-bottom: 25vh;
     }
-
+    .espaciocont{
+       
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    
+    .contenedor{
+        flex-direction: column;
+        margin: 10vh;
+    }
+    .desarollo{
+        text-align: center;
+    }
+    .contenedor2{
+        flex-direction: column;
+        margin: 10vh;
+    }
+    .desarollo2{
+        text-align: center;
+    }
+    .texto {
+        width: 80vw;
+        text-align: center;
+    }
     .texto p{
         display:none;
     }
@@ -779,26 +917,146 @@ fieldset{
         height: 7vh;
         
     }
+    .contTarjetas {
+        width: 60vw;
+        flex-wrap: wrap;
+    }
+
+    .tarjetas{
+        width: 25vw;
+        height: auto;
+        margin-bottom: 4vh;
+    }
+    .persona{
+        width: 25vw;
+    }
+    .fotoPersona{
+        width:100%;
+    }
+
+   
+    .pie{
+        align-items: center;
+        flex-direction: column;
+        width: 30vw;
+    }
+    #logopie{
+        height: auto;
+
+    }
+    .redes {
+        flex-direction: row;
+        justify-content: space-around;
+        font-size:30px;
+        width:30vw;
+        margin-top:20px;
+        margin-bottom: 20px;
+    }
+    
+    .mapa{
+        flex-direction: column;
+        width:30vw;
+        margin-top: 10px;
+    }
+
 }
 /* Móvil display posicion vertical */
-@media only screen and (max-width: 414px) and (orientation:portrait){
+@media only screen and (max-width: 670px) and (orientation:portrait){
+    .checkbtn {
+        font-size: 30px;
+        color:#fff;
+        float: right;
+        justify-content: center;
+        align-items: center;
+        line-height: 90px;
+        margin-right: 8vw;
+        cursor: pointer;
+        display: block;
+    }
+
+    #menu{
+        z-index: 2;
+    }
+
+    ul{
+        position: fixed;
+        display:flex;
+        align-items: center;
+        width: 100%;
+        height:100vh;
+        background:#49c5b6;
+        flex-direction:column;
+        justify-content:start;
+        top: 100px;
+        left: -100%; 
+        transition: all .5s;
+        z-index: 1;
+    }
+
+    li {
+        display: block;
+        padding-top: 2vh;
+        font-size: 20px;
+    }
+
+    li a:hover, li a.active{
+        background: none;
+        color:#ECD06F ;
+    }
+
+    #check:checked ~ ul{
+        left:0;
+        transition: all .25s;
+    }
+   
+    #titular{
+        font-size: x-small; 
+        text-align: center;
+        width: 60vw;
+        text-transform: uppercase;
+    }
     #comentario{
-      
+        width: 60vw;
+        font-size: medium;
         margin-top: 4vh;
+        text-align: center
     }
     .cuerpo{
         margin-bottom: 15vh;
     }
+
+    .espaciocont{
+       
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    
+    .contenedor{
+        flex-direction: column;
+        margin: 5vh;
+    }
+    .desarollo{
+        text-align: center;
+    }
+    .contenedor2{
+        flex-direction: column;
+        margin: 5vh;
+    }
+    .desarollo2{
+        text-align: center;
+    }
+   
     .imgPortada{
         width: 40vw;
     }
-    .espaciocont{
-        align-items: center;
-        flex-direction: column;
-    }
+  
     .texto{
         width: 80vw;
         text-align: center;
+    }
+    .texto p{
+        display:none;
     }
     .contbtn{ 
         align-items: center;
