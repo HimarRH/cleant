@@ -6,10 +6,12 @@
 
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 1300px;
 }
 .container {
     display: inline-flex;
     flex-direction: column;
+    
 }
 
 #check{
@@ -22,13 +24,20 @@ body{
 
 nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     background-color: #49c5b6;
     padding:2vh;
     align-items: center;
     position: fixed;
     width: 100%;
     z-index: 1;
+
+}
+.contMenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
 
 }
 
@@ -38,7 +47,7 @@ nav{
 }
 
 #menu {
-    width: 70%;
+    width: 100%;
     
 
 }
@@ -55,6 +64,8 @@ ul{
 li a{
     text-decoration: none;
     color: #fff;
+    font-size: small;
+    font-weight: 700;
 }
 
 li a:hover, li a.active{
